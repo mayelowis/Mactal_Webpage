@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOG Stories Part 1 - Mactal</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color:#F5F5F5;
+      font-family: "Poppins", Arial, sans-serif;
+      color: #4b0625;
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #4b0625;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4b0625;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #D4AF37;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4b0625;
+      transition: 0.3s;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 3em;
+      text-transform: uppercase;
+      word-spacing: 15px;
+      color: #4b0625;
+      margin-bottom: 10px;
+    } 
+
+    h2 {
+      text-align: left;
+      font-family: "Playfair Display";
+      font-size: 1.8em;
+      color:#4b0625; 
+      text-transform: uppercase;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #D4AF37;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      text-align: center;
+      font-family: "Playfair Display";
+      font-size: 1em;
+      text-transform: uppercase;
+      color:#D4AF37;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+   
+    h4 {
+      text-align: center;
+      font-family: "Playfair Display";
+      font-size: 1em;
+      color:#4b0625;
+    }
+
+    p {
+      text-align: justify; 
+      font-family: "Poppins", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      padding: 20px;
+      margin: 15px 0;
+      background: white;
+      border-left: 4px solid #D4AF37;
+      border-radius: 5px;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: linear-gradient(to right, transparent, #D4AF37, transparent);
+      margin: 20px 0;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #3a051d, #1a020d);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    footer h4 {
+      color: #D4AF37;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #D4AF37;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .square-image {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: 0.15s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .square-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(212, 175, 55, 0.4);
+      border: 2px solid #D4AF37;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .single-image {
+   display: block;
+    width: 100%;
+   max-width: 420px;          /* portrait width */
+    height: 560px;             /* portrait height */
+    object-fit: cover;
+   object-position: center top;
+   margin: 30px auto;         /* center horizontally */
+   border-radius: 18px;       /* smooth edges */
+   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+   border: 3px solid #D4AF37; /* matches your theme */
+    transition: 0.3s ease;
+}
+
+.single-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 18px 40px rgba(212,175,55,0.35);
+}
+
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      main {
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      p {
+        font-size: 15px;
+        padding: 15px;
+      }
+      .single-image { width: 95%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h3>MAYE'S CORNER</h3>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#blogs">Blogs</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="PhotoGallery.html">Photo Gallery</a> 
+    </nav>
+  </header>
+
+  <main>
+    <h1> HTML was my First Love  </h1>
+    <h4 class="blog-subtitle"> WRITTEN BY: MARIELLE LOUISE O. MACTAL | JANUARY 11, 2026</h4>&nbsp; 
+
+      <img src="https://raw.githubusercontent.com/mayelowis/Landing-page-pictures/main/pink.jpg" alt="Marielle Louise" class="single-image">
+  <p>When you are a kid are you looking at websites and wonder how they made? How do they made design eye-catching on a screen? Because this questions <i>playes in my mind and sparked my curiosity</i>in digital world. When i was a kid, i make time for browsing and looking for different websites checking for web-design especially game websites. Now as i grew older and an IT student, my curiosity bloomed into a passion. What was once i curious became something i want to learn and explore because i want to fulfill my curiosity when i was a kid. This blog is where i share my story how i started just because of curiosity and how HTML became my first love and how HTML became my first love.&nbsp;</p>
+ 
+  <h2>How my curiosity became enjoyable</h2>
+  <hr width="100%" size="5" color="#D4AF37"> 
+  <p>&nbsp;&nbsp;Mula pa noong bata ako, mahilig na akong mag-explore ng mga bagay na bago at nakakatuwa. 
+        Isang araw habang <b>nagse-search ako ng mga game websites</b>, bigla akong na-curious kung paano ba sila ginagawa at dini-design. Isa sa mga tumatak sa akin ay yung <strong>Friv</strong> dahil sa kulay niya na violet at kakaibang design kumpara sa ibang sites na nakita ko. Doon nagsimula ang tanong sa isip ko: <em>“Paano nga ba ginagawa ang mga websites?”</em> Kaya naghanap ako ng basics ng website coding, at doon ko unang nakilala ang <strong>HTML</strong>. Sa unang tingin pa lang, sobrang amazed ako kasi nasagot na yung matagal ko nang curiosity. <b>Parang may bagong mundo akong nadiskubre</b>, at doon nagsimula ang journey ko sa pag-aaral ng web design.Hindi lang curiosity ang nagtulak sa akin kundi pati yung excitement na matuto ng bago.Na-realize ko na ang bawat website na nakikita natin ay may kwento at proseso sa likod nito.At bilang isang estudyante, gusto kong maging bahagi ng mundong iyon ang mundo ng pagbuo at pag-design ng websites. Kaya simula noon, naging mas malalim ang interes ko sa technology at coding, at unti-unti kong nakikita ang sarili ko na nagiging passionate sa field na ito.
+&nbsp;&nbsp; .</p>
+
+  <h2> My first experience </h2>
+  <hr width="100%" size="5" color="#D4AF37"> 
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;Habang tumatagal, lalo akong na-excite matuto. Nanood ako ng YouTube tutorials at <b>nag-research tungkol sa HTML basics</b>. Ang saya kasi parang naglalaro lang, pero at the same time natututo ako. Fast forward sa senior high school, nagkaroon kami ng subject na <i>Empowerment Technology</i> kung saan tinuro ulit ang <b>web designing</b>. Bigla kong naalala yung childhood version ko na curious sa websites ngayon, <b>gumagawa na talaga kami ng sarili naming project</b>. Ang website namin ay tinawag na <b>“Star Gazing”</b>, tungkol sa pag-explore ng planets. Kami mismo gumawa ng logo, nag-research ng content, at nag-design ng buong site. Inabot kami ng halos 1–2 weeks bago matapos, nakakapagod pero fulfilling. Masaya rin kasi nakapag-share ako ng knowledge sa mga groupmates ko at nakapag-collaborate kami nang maayos.Dumating ang presentation day, online setup pa sa <em>Google Meet</em>. Required pa kami mag-formal attire at mag-set ng background na tugma sa theme ng website. Kinakabahan ako kasi first time kong mag-present online, pero naging successful naman. Sobrang saya ko nang malaman na napili kami ng professor bilang isa sa <b>best web design</b> sa senior high school. Ang recognition na iyon ay nagbigay sa akin ng <i>confidence at motivation</i> na ipagpatuloy ang journey ko sa IT.&nbsp;&nbsp;&nbsp;&nbsp;</p> 
+
+  <h2> Curiosity, Confidence, and Continuous Improvement </h2>
+  <hr width="100%" size="5" color="#D4AF37"> 
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;Looking back, my journey with HTML nagsimula lang sa <b>simpleng childhood curiosity</b> pero eventually naging passion na patuloy na <i>naghuhulma kung sino ako ngayon</i>. Ang dating simpleng tanong na <b>“paano ba ginagawa ang websites?”</b>e unti-unting naging learning, creating, at believing in my own abilities. Mula sa <b>pag-explore ng game websites</b> hanggang sa paggawa ng first project namin sa SHS, bawat experience <b>nagpalakas ng interest ko sa web design at programming</b>. HTML para sa akin ay hindi lang basta programming language ito ang naging <b>foundation ng growth, creativity, at confidence</b>b> ko sa digital world.Ngayon na IT student na ako, dala ko pa rin yung parehong curiosity na nagsimula sa pagkabata, pero ngayon guided na ng knowledge, experience, at determination. Alam kong marami pa akong dapat matutunan at i-improve, pero lagi kong pinapaalala sa sarili ko na laging may room for improvement. Excited akong mag-explore ng bago, matuto mula sa pagkakamali, at mag-grow bilang isang passionate learner. Sa bawat hakbang, dala ko ang curiosity, dedication, at drive na magpatuloy sa journey ko sa web design at programming, habang patuloy kong pinapatunayan sa sarili ko na kaya kong magtagumpay sa digital world.
+&nbsp;&nbsp;&nbsp;&nbsp;</p>  
+
+
+<hr>
+
+  </main>
+
+  <footer>
+    <h4 class="footer"><b>&copy; 2026 Marielle Louise Mactal</b></h4>
+    </div>
+  </footer>
+</body>
+</html>
+
