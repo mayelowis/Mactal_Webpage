@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marielle Louise Mactal">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head> 
+
+    <title> Home | Maye's Corner</title>
+
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: #F5F5F5; 
+            color: #4b0625; 
+            line-height: 1.75; 
+        }
+
+        a { 
+            text-decoration: none; 
+            color: #4b0625; 
+            transition: 0.3s; 
+        }
+
+    header {
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center;
+      padding: 20px 40px; 
+      background: #ffffff; 
+      position: sticky; 
+      top: 0; 
+      z-index: 1000;
+    }
+
+    header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #4b0625;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4b0625;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #D4AF37;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4b0625;
+      transition: 0.3s;
+    }
+
+        section { 
+            padding: 80px 20px; 
+            text-align: center; 
+        }
+
+        .hero { 
+            background: #ffffff; 
+        }
+
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .hero h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 48px; 
+            margin: 15px 0; 
+            letter-spacing: 1px;
+        }
+
+        .hero h3 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 24px; 
+            margin: 5px 0; 
+            color: #D4AF37; 
+            text-shadow: 0 1px 2px rgba(0,0,0,0.15); 
+        }
+
+        .hero p { 
+            max-width: 650px; 
+            margin: 0 auto 30px; 
+            font-size: 18px; 
+        }
+
+        .hero-image-wrapper img {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+            transition: 0.3s ease;
+            border: 3px solid #D4AF37;
+        }
+
+        .hero-image-wrapper img:hover { 
+            transform: scale(1.05); 
+        }
+
+        .btn {
+            display: inline-block; 
+            padding: 14px 28px; 
+            margin: 6px; 
+            border-radius: 5px;
+            background: #4b0625; 
+            color: #ffffff; 
+            font-weight: 600; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .btn:hover { 
+            background: #D4AF37; 
+            color: #4b0625; 
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .btn.light { 
+            background: #D4AF37; 
+            color: #4b0625; 
+        }
+
+        .btn.light:hover { 
+            background: #4b0625; 
+            color: #ffffff; 
+        }
+
+        .about { 
+            background: radial-gradient(circle at top right, #3a051d, #1a020d);
+            color: white;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-container { 
+            max-width: 700px; 
+            margin: 0 auto; 
+        }
+
+        .about h3 { 
+            color: #D4AF37; 
+            letter-spacing: 3px; 
+            font-size: 16px; 
+            margin-bottom: 10px; 
+            text-transform: uppercase; 
+        }
+
+        .about h1 { 
+            font-size: 54px; 
+            margin-bottom: 20px; 
+            font-family: 'Playfair Display', serif; 
+        }
+
+        .about p { 
+            color: #e0e0e0; 
+            font-size: 18px; 
+            line-height: 1.8; 
+            margin-bottom: 35px; 
+            text-align:center;
+        }
+
+        .about .btn { 
+            border: 2px solid #D4AF37; 
+            background: transparent; 
+            color: #D4AF37; 
+        }
+
+        .about .btn:hover { 
+            background: #D4AF37; 
+            color: #4b0625; 
+        }
+
+        .blogs { 
+            background: #ffffff; 
+        }
+
+        .cards { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            margin-top: 30px; 
+        }
+
+        .card {
+            width: 260px; 
+            background: #ffffff; 
+            border: 2px solid #D4AF37; 
+            border-radius: 8px; 
+            padding: 15px; 
+            text-align: left; 
+            transition: 0.3s;
+        }
+
+        .card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1); 
+        }
+
+        .card img { 
+            width: 100%; 
+            border-radius: 6px; 
+        }
+
+        .tag { 
+            font-size: 14px; 
+            color: #D4AF37; 
+            margin: 8px 0; 
+            font-weight: 600; 
+        }
+
+        .card p { 
+            margin-bottom: 15px; 
+        }
+
+        .contact { 
+            background: radial-gradient(circle at top right, #3a051d, #1a020d);
+            color: white;
+        }
+
+        .contact h3 { 
+            color: white; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+
+        .contact h1 { 
+            color: #D4AF37; 
+            font-family: 'Playfair Display', serif; 
+            font-size: 42px; 
+            margin-bottom: 10px; 
+        }
+
+        .contact p { 
+            color: #e0e0e0; 
+            max-width: 600px; 
+            margin: 0 auto 30px; 
+        } 
+
+        .contact .btn { 
+            border: 2px solid #D4AF37; 
+            background: #D4AF37; 
+            color: #1a020d; 
+        }
+
+        .contact .btn:hover { 
+            background: #1a020d; 
+            color: #1a020d; 
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 40px 20px; 
+            font-size: 14px; 
+            color: #4b0625; 
+        } 
+
+        h2 { 
+            font-family: 'Cormorant Garamond', serif; 
+        } 
+
+        .video-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.video-card {
+  max-width: 800px;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>MAYE'S CORNER</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biography.html">About</a>
+            <a href="index.html#blogs">Blogs</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="PhotoGallery.html">Gallery</a> 
+            <a href="MyBeats.html">Beats</a>  
+            <a href="Movies.html">Movies</a>  
+            <a href="TVseries.html">Series</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h3>WELCOME TO MY BLOG</h3>
+                <h1>Hi, I'm Marielle Louise!</h1>
+                <p>This is my space to share the stories, ideas, and experiences that shape me.</p>
+                <a href="#about" class="btn">About Me</a>
+                <a href="#blogs" class="btn">My Blogs</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/profile.png" alt="Marielle Louise">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <h3>Get To Know</h3>
+            <h1>Marielle</h1>
+            <p>As a <b>BSIT student</b>, I enjoy discovering new ideas and expressing my creativity. Here, I share my journey, growth, and the moments that shape who I am.</p>
+            <a href="Biography.html" class="btn">Read Biography</a>
+        </div> 
+        
+     <div class="video-grid">
+  <div class="video-card">
+    <video controls playsinline preload="metadata">
+      <source src="https://raw.githubusercontent.com/mayelowis/Landing-page-pictures/main/video.mp4" type="video/mp4">
+    </video>
+
+  </div>
+</div>
+
+</div>
+
+    </section>
+
+    <section class="blogs" id="blogs">
+        <h3>Latest Stories</h3>
+        <h1>Featured Blogs</h1>
+        <div class="cards">
+                        <div class="card">
+                                 <a href="blog1.html" style="color:inherit;text-decoration:none;display:block">
+                                 <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/nemsss.jpg" alt="Blog 1">
+                            <div class="tag">Technology Related</div> 
+                                <h3>HTML was become my first love</h3> 
+                                <p>From my curiosity as a kid to become my first coding.</p>
+                                 </a>
+                        </div>
+                        <div class="card">
+                                <a href="blog2.html" style="color:inherit;text-decoration:none;display:block">
+                                <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/meme.jpg" alt="Blog 2">
+                                <div class="tag">Personal Related</div>
+                                <h3>Life starts at 18: Making me wasn't gentle</h3> 
+                                <p>How struggles becomes my greatest strength.</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="blog3.html" style="color:inherit;text-decoration:none;display:block">
+                                <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/office.jpg" alt="Blog 3">
+                                <div class="tag">Career Related</div>
+                                <h3>I hate coding: Finding my place in IT</h3> 
+                                <p>Navigating my path through the world of technology.</p>
+                                </a>
+                        </div>
+        </div>
+        <br><br>
+        <a href="#blogs" class="btn light">Explore More Blogs</a>
+    </section>
+
+    <section class="contact" id="contact">
+        <h3>Let's Connect</h3>
+        <h1>Email Me</h1>
+        <p>Share your thoughts, questions, or just say hello I’d love to connect!</p>
+        <a href="mailto:mariellelouisemactal@email.com" class="btn">Send an Email</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Marielle Louise Mactal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
