@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Films | Maye's Corner</title>
+
+<link rel="icon" href="favicon.png" type="image/png">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#4b0625;
+  color:#4b0625;
+  font-family:"Poppins", Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#ffffff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-family:"Playfair Display", serif;
+  letter-spacing:2px;
+  font-size:1.3em;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#4b0625;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:#D4AF37;
+  border-bottom:2px solid #D4AF37;
+  padding-bottom:3px;
+}
+
+/* MAIN */
+main{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+h1{
+  text-align:center;
+  font-family:"Playfair Display", serif;
+  font-size:3em;
+  margin-bottom:10px;
+  color:#D4AF37;
+}
+
+.subtitle{
+  text-align:center;
+  color:#ffffff;
+  margin-bottom:60px;
+}
+
+/* CATEGORY */
+.category{
+  margin-bottom:50px;
+  padding:20px 35px;
+  background:#ffffff;
+  border-radius:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.category h2{
+  font-family:"Playfair Display", serif;
+  text-transform:uppercase;
+  border-bottom:3px solid #D4AF37;
+  padding-bottom:10px;
+  margin-bottom:15px;
+}
+
+.genre-desc{
+  margin-bottom:25px;
+  color:#555;
+  font-size:.95em;
+}
+
+/* GRID */
+.movies{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:25px;
+}
+
+/* CARD */
+.movie{
+  background:#ffffff;
+  border-radius:10px;
+  padding:15px;
+  border:3px solid rgba(210,167,23,.9);
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.movie img{
+  width:35%;
+  height:500px;
+  object-fit:cover;
+  display:block;
+  margin:0 auto;
+}
+
+.movie h3{
+  font-size:1.1em;
+  margin-bottom:6px;
+}
+
+.movie p{
+  font-size:.9em;
+  color:#555;
+  margin-bottom:10px;
+}
+
+iframe{
+  width:80%;
+  height:400px;
+  border-radius:12px;
+  display:block;
+  margin:0 auto;
+}
+
+/* FOOTER */
+footer{
+  background:linear-gradient(135deg, #3a051d, #1a020d);
+  color:#f5f5f5;
+  text-align:center;
+  padding:40px 20px;
+}
+
+footer { 
+            text-align: center; 
+            padding: 40px 20px; 
+            font-size: 14px; 
+            color: #ffffff; 
+        } 
+
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  h1{
+    font-size:2.2em;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 class="logo">MAYE'S CORNER</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#blogs">Blogs</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="biography.html">About</a> 
+    <a href="PhotoGallery.html">Gallery</a>
+    <a href="Mybeats.html">Beats</a>
+    <a href="Movies.html">Movies</a> 
+    <a href="TVseries.html">Series</a> 
+  </nav>
+</header>
+
+<main>
+  <h1>My TV Series</h1>
+  <p class="subtitle">
+    A collection of my favorite TV series that have captivated me with their compelling storytelling, memorable characters, and unforgettable moments.
+  </p>
+
+  <section class="category">
+    <h2>Action</h2>
+    <p class="genre-desc">My favorite action series that are full of suspense, adventure, and thrilling moments.</p>
+
+    <div class="movies">
+      <div class="movie">
+        <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/things.png" alt="stranger things poster">
+        <h3>Stranger things</h3>
+        <p><strong>Director:</strong> Matt and Ross Duffer</p>
+        <p><strong>Stars:</strong> Winona Ryder, David Harbour, Millie Bobby Brown, Finn Wolfhard, Gaten Matarazzo, Caleb McLaughlin</p>
+         <p><i>Set in the 1980s in Hawkins, Indiana, the series begins with the mysterious disappearance of a young boy, leading his friends, family, and the local police chief to uncover a secret government experiment and a parallel dimension known as the Upside Down.
+The show blends science fiction, horror, and coming‑of‑age drama, following a group of kids as they face supernatural forces, government conspiracies, and personal struggles while trying to protect their town from escalating threats.
+</i></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qc_NJFmng2E?si=8kk01ggFodzlgXoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Romantic</h2>
+    <p class="genre-desc">Beautiful love stories that touch the heart during pandemic.</p>
+
+    <div class="movies">
+      <div class="movie">
+        <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/crash.png" alt="The Greatest Showman poster">
+        <h3>Crash Landing on You</h3>
+        <p><strong>Director:</strong> Lee Jung-hyo</p>
+        <p><strong>Stars:</strong> Hyun Bin, Son Ye-jin, Kim Jung-hyun, Seo Ji-hye</p>
+        <p><i>A romantic drama about a South Korean woman who accidentally lands in North Korea after a paragliding accident and is taken in by a North Korean soldier. The series explores themes of love, cultural differences, and the challenges of bridging two divided nations.</i></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GVQGWgeVc4k?si=fY7bnhkD5UJyTCN3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Fantasy - Drama</h2>
+    <p class="genre-desc">These fantasy dramas are full of magic, adventure, and mythical elements that transport viewers to otherworldly realms.</p>
+
+    <div class="movies">
+      <div class="movie">
+         <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/enca.png" alt="Togo poster">
+        <h3>Encantadia (2016)</h3>
+        <p><strong>Director:</strong> Marc A. Reyes</p>
+        <p><strong>Stars:</strong> Glaiza de Castro, Kylie Padilla, Gabbi Garcia, Sanya Lopez</p>
+        <p><i>Encantadia is a Philippine fantasy drama series set in a mythical world divided into four kingdoms, each ruled by a keeper of a powerful elemental gem: Fire, Air, Water, and Earth. The story follows the four Sang’gres (Pirena, Amihan, Alena, and Danaya) as they struggle with sibling rivalries, betrayal, and the responsibility of protecting their realm from enemies who seek to control the gems.
+        The series blends epic battles, magic, and mythology with themes of family, loyalty, and destiny. The 2016 version is both a reboot and continuation of the original 2005 series, expanding the lore and modernizing the visuals for a new generation of viewers.</i></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/c19jvpQOFWw?si=0dPQkLtsKKBqZ0nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 <span>Marielle Louise Mactal</span></p>
+</footer>
+
+</body>
+</html>

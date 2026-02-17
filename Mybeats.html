@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beats | Maye's Corner</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#4b0625;
+  color:#4b0625;
+  font-family:"Poppins", Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#ffffff;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-family:"Playfair Display", serif;
+  letter-spacing:2px;
+  font-size:1.3em;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#4b0625;
+  font-weight:600;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#D4AF37;
+  border-bottom:2px solid #D4AF37;
+  padding-bottom:3px;
+}
+
+/* MAIN */
+main{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+h1{
+  text-align:center;
+  font-family:"Playfair Display", serif;
+  font-size:3em;
+  margin-bottom:10px; 
+  color:#D4AF37; 
+}
+
+.subtitle{
+  text-align:center;
+  color:#ffffff;
+  margin-bottom:60px;
+}
+
+/* GENRE */
+.genre{
+  margin-bottom:100px;
+  padding:40px 35px;
+  background: #ffffff;
+  border-radius:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.genre h2{
+  font-family:"Playfair Display", serif;
+  text-transform:uppercase;
+  border-bottom:3px solid #D4AF37;
+  padding-bottom:10px;
+  margin-bottom:15px;
+}
+
+.genre-desc{
+  margin-bottom:25px;
+  color:#555;
+  font-size:.95em;
+}
+
+/* GRID */
+.beats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:25px;
+}
+
+/* CARD */
+.beat-card{
+  background:#ffffff;
+  border-radius:16px;
+  padding:18px;
+  border:3px solid rgba(210, 167, 23, 0.919); /* soft gold border */
+  transition:.3s ease;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.beat-card img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+
+.beat-card h3{
+  font-size:1.1em;
+  margin-bottom:4px;
+}
+
+.beat-card p{
+  font-size:.9em;
+  color:#555;
+  margin-bottom:10px;
+}
+
+audio{
+  width:100%;
+  accent-color:#D4AF37;
+}
+
+ footer { 
+            text-align: center; 
+            padding: 40px 20px; 
+            font-size: 14px; 
+            color: #ffffff; 
+        } 
+
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  h1{
+    font-size:2.2em; 
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 class="logo">MAYE'S CORNER</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="biography.html">About</a>
+    <a href="index.html#blogs">Blogs</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="PhotoGallery.html">Gallery</a>
+    <a href="Mybeats.html">Beats</a>
+    <a href="Movies.html">Movies</a>
+    <a href="TVseries.html">Series</a>
+  </nav>
+</header>
+
+<main>
+  <h1>My Beats</h1>
+  <p class="subtitle">
+    Music that flows through my everyday routine, shaped by mood and genre.
+  </p>
+
+  <!-- WORSHIP -->
+  <section class="genre">
+    <h2>Worship</h2>
+    <p class="genre-desc">
+      Reflective and prayerful songs centered on faith, stillness, and devotion. This is part of my everyday playlist for queit moments, study, and reflection.
+    </p>
+
+    <div class="beats-grid">
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/low.png" alt="I Delight in Your Will cover">
+        <h3>I Delight in Your Will</h3>
+        <p>Victory Worship | Calm, reflective</p>
+        <audio controls preload="none">
+          <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/delight.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/still.png" alt="Still cover">
+        <h3>Still</h3>
+        <p>Hillsong Worship | Calm, reflective</p>
+        <audio controls preload="none">
+          <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/still.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/yholy.png" alt="You Are Holy cover">
+        <h3>You Are Holy (Prince of Peace)</h3>
+        <p>Marc Imboden | Reverent, uplifting</p>
+        <audio controls preload="none">
+          <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/prince.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <section class="genre">
+    <h2>OPM</h2>
+    <p class="genre-desc">
+      These songs are a mix of heartfelt ballads, nostalgic tunes, and catchy melodies that have become my soundtrack for various moods and moments.
+    </p>
+
+    <div class="beats-grid">
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/Universe.png" alt="Your Universe cover">
+        <h3>Your Universe</h3>
+        <p>Rico Blanco | Romantic, Introspective</p>
+        <audio controls preload="none">
+          <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/uni.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/balisong.png" alt="Balisong cover">
+        <h3>Balisong</h3>
+        <p>Rivermaya | Emotional, expressive</p>
+        <audio controls preload="none">
+          <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/song.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/saksi.png" alt="Saksi Ang Langit cover">
+        <h3>Saksi Ang Langit</h3>
+        <p>December Avenue | Hopeful, Reflective</p>
+        <audio controls preload="none">
+          <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/langit.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <section class="genre">
+    <h2>POP / R&B </h2>
+    <p class="genre-desc">
+      These songs are a mix of fun, lively tracks and smooth, relaxing ones that I listen to every day. They help boost my mood and give me energy.
+    </p>
+
+    <div class="beats-grid">
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/bow.png" alt="Take a Bow cover">
+        <h3>Take a Bow</h3>
+        <p>Rihanna | Empowered, Dramatic</p>
+        <audio controls preload="none">
+           <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/takeabow.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/stick.png" alt="Stickwithu cover">
+        <h3>Stickwithu</h3>
+        <p>The Pussycat Dolls | Romantic, Loyal</p>
+        <audio controls preload="none">
+        <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/stickwithu.mp3" type="audio/mpeg">
+      </audio>
+
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/7rings.png" alt="7 rings cover">
+        <h3>7 rings</h3>
+        <p>Ariana Grande | Confident, Bold, Fun</p>
+        <audio controls preload="none">
+          <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/7rings.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <section class="genre">
+    <h2>Classic / Soft Rock</h2>
+    <p class="genre-desc">
+      These songs are timeless pieces with rich melodies and calming rhythms. They bring peace, focus, and a touch of elegance to everyday life.
+    </p>
+
+    <div class="beats-grid">
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/abba.png" alt="Quiet Focus cover">
+        <h3>Slipping Through My Fingers</h3>
+        <p>ABBA | Nostalgic, Emotional</p>
+        <audio controls preload="none">
+           <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/fingers.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/own.png" alt="Everything I own cover">
+        <h3>Everything I Own</h3>
+        <p>Bread | Sentimental, Heartfelt</p>
+        <audio controls preload="none">
+           <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/Own.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="beat-card">
+        <img src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/breath.png" alt="Every Breath You Takecover">
+        <h3>Every Breath You Take</h3>
+        <p>The Police | Moody, Iconic</p>
+        <audio controls preload="none">
+           <source src="https://raw.githubusercontent.com/mayelowis/MyBeats/main/breath.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 <span>Marielle Louise Mactal</span></p>
+</footer>
+
+</body>
+</html>
