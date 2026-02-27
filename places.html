@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Places | Maye's Corner</title>
+
+ <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/mayelowis/landing-page/main/letter-m.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#F5F5F5;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #4b0625;
+  line-height: 1.75;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #4b0625;
+      margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4b0625;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #D4AF37;
+}
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 40px;
+  color:#D4AF37;
+  font-size: 15px;
+}
+
+
+.dream-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid #D4AF37;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+  padding: 25px;
+  margin: 50px 0;
+  background: white;
+  border-radius: 8px;
+} 
+
+.top-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #4b0625;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.top-btn:hover {
+  background: #D4AF37;
+  color: #4b0625;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .dream-image {
+    width: 95%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>MAYE'S CORNER</h2>
+  <nav>
+    <a href="index.html">Home</a>
+            <a href="biography.html">About</a>
+            <a href="index.html#blogs">Blogs</a>
+            <a href="PhotoGallery.html">Gallery</a> 
+            <a href="MyBeats.html">Beats</a>  
+            <a href="Moviess.html">Movies</a>  
+            <a href="TVseries.html">Series</a> 
+            <a href="places.html">Dream Places</a>
+            <a href="bucketlist.html">Bucket List</a>
+  </nav>
+</header>
+
+<main>
+
+<h1>Chasing Dreams Across the Globe</h1>
+<h4>Where the heart feels at home, even if it’s far away</h4>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/mayelowis/Music/main/dreams.jpg"alt="Dream Places" usemap="#dream-map" class="dream-image" width="889" height="500"/> 
+<map name= "dream-map">
+   <area shape="circle" coords="146,129,123" href="japan.html" target="_blank "/> 
+  <area shape="rect" coords="337,27,534,225" href="korea.html" target="_blank"/> 
+  <area shape="poly" coords="584,182,625,218,684,214,747,213,806,214,875,183,869,150,849,150,834,91,684,96,646,86,626,124,577,129" href="hongkong.html" target="_blank"/> 
+  <area shape="poly" coords="20,418,43,477,106,484,167,487,230,485,293,454,310,411,308,365,235,379,165,405,147,371,137,342,88,368,45,401,25,437" href="switzerland.html" target="_blank"/>
+  <area shape="square" coords="335,263,551,473" href="UK.html" target="_blank"/>
+  <area shape="circle" coords="725,365,123" href="maldives.html" target="_blank"/>
+</map>
+
+<p>From towering mountains to serene oceans, these are the dream spots <b>I hope to visit one day</b>. Each place calls to me in a different way some whisper stories of history and culture, others promise <b>moments of peace and reflection</b>. Traveling isn’t just about sightseeing; it’s about collecting memories, learning from the world, and <em>finding pieces of yourself</em> along the way. These are the destinations I long to explore and <b>make part of my life’s journey</b>.</p> 
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="#top" class="top-btn">Back to Top</a> 
+
+  <br>
+</main>
+
+
+<footer style="background: #1a020d; color: #D4AF37; text-align: center; padding: 30px 0;">
+    © 2026 Marielle Louise Mactal. All rights reserved.
+</footer>
+
+</body>
+</html>

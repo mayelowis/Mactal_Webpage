@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bucket List | Maye's Corner</title> 
+
+ <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/mayelowis/landing-page/main/letter-m.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #F5F5F5;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #4b0625;
+  line-height: 1.75;
+}
+
+
+ body {
+      background-color:#F5F5F5;
+      font-family: "Poppins", Arial, sans-serif;
+      color: #4b0625;
+      margin: 0;
+      line-height: 1.75;
+    }
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#ffffff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: #4b0625;
+      margin: 0;
+    }
+
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4b0625;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #D4AF37;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4b0625;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #D4AF37;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 3em;
+      text-transform: uppercase;
+      word-spacing: 15px;
+      color: #4b0625;
+      margin-bottom: 10px;
+    } 
+
+    h3 {
+      text-align: left;
+      font-family: "Playfair Display";
+      font-size: 1.8em;
+      color:#4b0625; 
+      text-transform: uppercase;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+    }
+
+main { max-width: 1000px; margin: 0 auto; padding: 80px 20px; }
+
+h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  word-spacing: 15px;
+  color: #4b0625;
+  margin-bottom: 10px;
+} 
+
+h4 { text-align: center; font-family: "Poppins"; font-size: 1em; color:#D4AF37; margin-bottom: 30px; text-decoration:none; }
+
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #D4AF37, transparent);
+  margin: 20px 0;
+}
+
+.bucketlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.bucket-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #D4AF37;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bucket-card-image {
+  width: 100%;
+  padding-top: 100%; /* 1:1 ratio */
+  position: relative;
+  overflow: hidden;
+}
+.bucket-card-image a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bucket-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bucket-card-header {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em;
+  color: #4b0625;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bucket-card-content {
+  padding: 10px 15px 20px 15px;
+  text-align: center;
+  width: 100%;
+}
+.bucket-card-content p {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5;
+  min-height: 60px;
+}
+
+.top-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #4b0625;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.top-btn:hover {
+  background: #D4AF37;
+  color: #4b0625;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main { padding: 20px 15px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <h2>MAYE'S CORNER</h2>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="biography.html">About</a> 
+      <a href="index.html#blogs">Blogs</a>
+      <a href="PhotoGallery.html">Gallery</a> 
+      <a href="MyBeats.html">Beats</a> 
+      <a href="Moviess.html">Movies</a> 
+      <a href="TVseries.html">Series</a>
+      <a href="places.html">Dream Places</a>
+      <a href="bucketlist.html">Bucket List</a>
+  </nav>
+</header>
+
+  <main id="top">
+    <h1>My Success Blueprint</h1>
+    <h4 class="blog-subtitle">A structured path guiding me toward growth, financial stability, and lifelong success.</h4>
+    <hr width="100%" size="5" color="#D4AF37">
+
+    <div class="bucketlist-grid">
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/skillz.webp" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/skillz.webp" alt="Learn Skill">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Learn a New Skill</h3>
+        <div class="bucket-card-content">
+          <p>Challenge myself to step outside my comfort zone.</p>
+        </div>
+      </div>
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/grads.jpg" target="_blank">
+           <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/grads.jpg" alt="Finish College">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Finish College</h3>
+        <div class="bucket-card-content">
+          <p>Complete my degree and to be Cum Laude.</p>
+        </div>
+      </div> 
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/IT.jpg" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/IT.jpg" alt="Get a job">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Start my work journey</h3>
+        <div class="bucket-card-content">
+          <p>Establish financial independence and gain professional experience.</p>
+        </div>
+      </div>
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/house.webp" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/house.webp" alt="House for Family">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Buy a House for My Family</h3>
+        <div class="bucket-card-content">
+          <p>Provide a comfortable and safe home for my family.</p>
+        </div>
+      </div>
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/car.avif" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/car.avif" alt="Car">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Buy a Car</h3>
+        <div class="bucket-card-content">
+          <p>Have a reliable vehicle for travel, convenience, and for my family.</p>
+        </div>
+      </div>
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/grocery.jpg" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/grocery.jpg" alt="Business">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Start a Business</h3>
+        <div class="bucket-card-content">
+          <p>Create a business to grow income beyond my job this was my lola's dream.</p>
+        </div>
+      </div>
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/shelter.jpg" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/shelter.jpg" alt="Help Shelter">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Help at Animal Shelters</h3>
+        <div class="bucket-card-content">
+          <p>Contribute to communities and care for animals in need.</p>
+        </div>
+      </div> 
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/family.jpg" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/family.jpg" alt="Family">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Grow a loving home</h3>
+        <div class="bucket-card-content">
+          <p>Establish a safe and joyful space for my future family.</p>
+        </div>
+      </div>
+
+
+      <div class="bucket-card">
+        <div class="bucket-card-image">
+          <a href="https://raw.githubusercontent.com/mayelowis/landing-page/main/traveljpg" target="_blank">
+            <img src="https://raw.githubusercontent.com/mayelowis/landing-page/main/travel.jpg " alt="Travel">
+          </a>
+        </div>
+        <h3 class="bucket-card-header">Travel to New Countries</h3>
+        <div class="bucket-card-content">
+          <p>Experience new cultures, foods, and adventures worldwide.</p>
+        </div>
+      </div>
+
+    </div>
+
+   <div style="text-align:center; margin-top:30px;">
+    <a href="#top" class="top-btn">Back to Top</a>
+  </div>
+</main>
+
+
+<footer style="background: #1a020d; color: #D4AF37; text-align: center; padding: 30px 0;">
+    © 2026 Marielle Louise Mactal. All rights reserved.
+</footer> 
+
+</body>
+</html>
